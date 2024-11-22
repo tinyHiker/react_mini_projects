@@ -1,140 +1,124 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-}
-
+/* General body styles */
 body {
-  background: #333;
-  color: hsl(200, 100%, 90%);
-  max-width: 400px;
-  padding: 1rem;
-  margin: 0 auto;
+  font-family: Arial, sans-serif; /* Ensures a modern look */
+  background-color: #f4f4f4; /* Soft background color */
+  margin: 0;
+  padding: 20px;
+  color: #333; /* Primary text color */
+  
 }
 
+
+.buttons-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 170px;
+  padding-right: 170px
+}
+
+
+
+
+
+/* Header styles */
+.header {
+  color: #0275d8; /* Adds color to the header */
+  text-align: center; /* Centers the header text */
+}
+
+/* Form styling */
 .new-item-form {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff; /* White background for the form area */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
+
+
+/* Assuming your form has a class named 'new-item-form' and the text input is within this form */
+input[type="text"] {
+  width: 100%; /* Stretches the input to cover the full width */
+  box-sizing: border-box; /* Includes padding and border in the element's total width */
+  padding: 8px; /* Adds padding inside the input for better text visibility */
+  margin: 0 0 10px 0; /* Adds margin to the bottom */
+  border: 1px solid #ccc; /* Provides a subtle border */
+  border-radius: 4px; /* Optional: Rounds the corners */
+}
+
+
+
+.content-container {
+  width: 50%; /* Adjust width to your preference */
+  max-width: 800px; /* Ensures the container doesn't get too wide on larger screens */
+  padding: 20px;
+  background-color: #fff; /* White background for the content area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a bit of depth */
+  border-radius: 8px; /* Optionally rounded corners */
+}
+
+
 
 .form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
-.btn {
-  background: hsl(200, 100%, 50%, 0.1);
-  border: 1px solid hsl(200, 100%, 50%);
-  color: hsl(200, 100%, 50%);
-  padding: 0.25em 0.5em;
-  border-radius: 0.25em;
+input[type="text"], button, input[type="button"] {
+  padding: 8px;
+  font-size: 16px; /* Larger font size for better readability */
+  border: 1px solid #ccc; /* Subtle border for inputs and buttons */
+  border-radius: 4px; /* Rounded borders */
+}
+
+button {
+  background-color: #5cb85c; /* Bootstrap success color for buttons */
+  color: white;
+  border: none;
   cursor: pointer;
-  outline: none;
+  transition: background-color 0.3s;
 }
 
-.btn:hover,
-.btn:focus-visible {
-  background: hsl(200, 100%, 50%, 0.2);
+button:hover {
+  background-color: #449d44; /* Darken button on hover */
 }
 
-.btn.btn-danger {
-  background: hsl(0, 100%, 40%, 0.1);
-  border: 1px solid hsl(0, 100%, 40%);
-  color: hsl(0, 100%, 40%);
-}
-
-.btn.btn-danger:hover,
-.btn.btn-danger:focus-visible {
-  background: hsl(0, 100%, 40%, 0.2);
-}
-
-.new-item-form input {
-  outline: none;
-  border: 1px solid hsl(200, 100%, 40%);
-  background: hsl(200, 100%, 30%);
-  border-radius: 0.25em;
-  padding: 0.25em 0.5em;
-  color: hsl(200, 100%, 90%);
-}
-
-.new-item-form input:focus {
-  border: 1px solid hsl(200, 100%, 70%);
-}
-
-.header {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
+/* List styling */
 .list {
-  margin: 0;
-  padding: 0;
-  margin-left: 1rem;
   list-style: none;
-}
-
-.list li:has(input:checked) label {
-  color: hsl(200, 20%, 40%);
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  padding: 0;
+  position: relative
 }
 
 .list li {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
+  background-color: #fff;
+  margin-bottom: 5px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.list li label {
-  display: flex;
-  gap: 0.25rem;
-  cursor: pointer;
-  align-items: center;
+.list input[type="checkbox"] {
+  margin-right: 5px;
 }
 
-.list li:has(input:focus-visible) label {
-  outline: 1px solid hsl(200, 100%, 50%);
+.btn-danger {
+  background-color: #d9534f; /* Bootstrap danger color for delete buttons */
 }
 
-.list li input {
-  outline: none;
-  width: 0;
-  height: 0;
-  appearance: none;
-  pointer-events: none;
-  position: absolute;
+.btn-danger:hover {
+  background-color: #c9302c;
 }
 
-.list li label::before {
-  content: "";
-  display: block;
-  width: 0.9rem;
-  height: 0.9rem;
-  background: hsl(200, 100%, 90%);
-  border-radius: 0.25em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Utility classes for alignment and visibility */
+.nrg-inner-container {
+  display: none; /* Hide phishing protection elements by default */
 }
 
-.list li label:hover::before {
-  background: hsl(200, 100%, 80%);
-}
 
-.list li:has(input:checked) label::before {
-  content: "✔";
-  background: hsl(200, 100%, 40%);
-  color: hsl(200, 100%, 90%);
-  font-size: 0.75rem;
-  font-weight: bold;
-}
-
-.list li:has(input:checked) label:hover::before {
-  background: hsl(200, 100%, 30%);
+#deleter {
+  margin-right: 100px;        
 }

@@ -15,12 +15,12 @@ export function NewTodoForm({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit} className="new-item-form">
       <div className="form-row">
-        <label htmlFor="item">New Item</label>
+        <label htmlFor="new_item">New Item      </label>
         <input
           value={newItem}
           onChange={e => setNewItem(e.target.value)}
           type="text"
-          id="item"
+          id="new_item"
         />
       </div>
       <button className="btn">Add</button>
