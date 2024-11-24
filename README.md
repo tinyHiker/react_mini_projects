@@ -2,31 +2,31 @@
 
 # Career Router Page
 
-[Career Router Page](FAQ.png "FAQ Page of Career Router")
+![Career Router Page](readme-images/FAQ.png "FAQ Page of Career Router")
 
-[Career Router Page](https://lively-malasada-128a98.netlify.app/ "Go to deployed page")
+[Career Router Page](https://lively-malasada-128a98.netlify.app/ "Site Link")
 
 Built using React Router and localStorage
 
 # Task Timer
 
-[ Screenshot ]( SCREENSHOT.png "Task Timer Page")
+![ Screenshot ]( readme-images/SCREENSHOT.png "Task Timer Page")
 
-[Task Time Timer](https://phenomenal-dolphin-acd87b.netlify.app/ "Go to deployed Task-Tracker/Timer Page")
+[Task Time Timer](https://phenomenal-dolphin-acd87b.netlify.app/ "Site Link")
 
 Built using React
 
 # Hangman
 
-[Hangman]( H.png "Hangman Page")
+![Hangman]( readme-images/H.png "Hangman Page")
 
-[Hangman](https://admirable-kashata-2889e3.netlify.app/ "Go to deployed Hangman Page")
+[Hangman](https://admirable-kashata-2889e3.netlify.app/ "Site Link")
 
 Built using React
 
 # Todo List
 
-[Todo]( TODO.png "Todo page")
+![Todo]( readme-images/TODO.png "Site Link")
 
 Built using React
 
